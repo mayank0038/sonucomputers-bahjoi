@@ -1,0 +1,362 @@
+/* header details start */
+
+.logo-title-button {
+    /* background-color: rgba(0, 0, 0, 0.314); */
+    border-radius: 20px;
+    padding-left: 1%;
+    display: flex;
+    gap: 300px;
+}
+
+.logo-title-line {
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    gap: 25px;
+}
+
+.logo {
+    height: 100px;
+    filter: drop-shadow(5px 3px 5px white);
+    border-radius: 100%;
+}
+
+h1 {
+    color: white;
+    font-family: 'Gill Sans';
+    font-style: italic;
+    font-size: 25px;
+    text-decoration: underline;
+    animation: blink 2s linear infinite;
+}
+
+h4 {
+    font-style: italic;
+    color: white;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* sonu computers with logo end */
+
+/*button start*/
+
+.home-button {
+    /* background-color: rgba(0, 0, 255, 0.427); */
+    padding-top: 2.5%;
+    border-radius: 20px;
+    display: flex;
+}
+
+.box {
+    color: white;
+    text-decoration: underline;
+    font-style: italic;
+    width: 130px;
+    height: auto;
+    float: left;
+    transition: .5s linear;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 15px;
+    text-align: center;
+    margin: 0 5px;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.box:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(100%);
+}
+
+.box:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-top: 4px solid transparent;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(-100%);
+}
+
+.box:hover {
+    color: black;
+    background: white;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.box:hover:before {
+    border-color: red;
+    border-radius: 50px;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .3s;
+}
+
+.box:hover:after {
+    border-color: green;
+    border-radius: 50px;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .5s;
+}
+
+button {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+/*button end*/
+/* header details end */
+
+/* product page content start */
+
+body {
+    background-image: url(products/bg-image-webp.webp);
+    margin: 10px;
+}
+
+/* product page heading end */
+
+.product-container {
+    background-color: rgba(255, 255, 255, 0.662);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 200px;
+    border-radius: 20px;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* product image start */
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.outside {
+    top: 0;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+    transform-origin: 0;
+    box-shadow: 1px 1px 12px #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* product image end */
+
+/* product data start */
+
+h2 {
+    background-color: aqua;
+    font-style: italic;
+    padding-left: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+h2:hover {
+    background-color: white;
+    color: blue;
+    border-radius: 30px;
+}
+
+h3 {
+    color: red;
+    text-align: center;
+    padding-left: 30px;
+}
+
+p {
+    font-weight: bold;
+    padding-left: 60px;
+    padding-right: 10px;
+    text-align: left;
+}
+
+.ink-types {
+    padding-left: 10px;
+}
+
+.price {
+    background-color: black;
+    color: white;
+    padding-left: 50px;
+    text-align: center;
+}
+
+.inside {
+    background-color: white;
+    padding-top: 30px;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    color: #000;
+    box-shadow: 1px 1px 12px #000;
+    perspective: 2000px;
+}
+
+/* product data end */
+
+/* product container hover start */
+
+.inside:hover .outside {
+    transition: all 0.5s;
+    transform: rotatey(-80deg);
+}
+
+/* product container hover end */
+
+/* footer content start */
+
+#footer-content {
+    background-color: rgba(0, 0, 0, 0.314);
+    border-radius: 20px;
+    display: flex;
+    padding-left: 20px;
+    justify-content: space-between;
+}
+
+/* contact us logo and TEXT start */
+
+a {
+    text-decoration: none;
+}
+
+.para-hover {
+    font-size: 20px;
+    padding: 5px;
+    background-color: rgba(246, 255, 0, 0.722);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.para-hover:hover {
+    color: #0400ff;
+    font-style: italic;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 10px;
+    padding: auto;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.logo-text {
+    display: flex;
+    align-items: center;
+    padding-inline-start: 10%;
+}
+
+.logo-text:hover {
+    color: white;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+span {
+    font-size: 16px;
+    padding: 10px;
+}
+
+/* contact us logo and text end */
+
+/* contact us logo start */
+
+.contact-us-logo {
+    height: 20px;
+    width: 20px;
+}
+
+/* contact us logo end */
+
+/* staff image start */
+
+.aside-image {
+    background-color: #000;
+    margin-top: 20px;
+    height: 250px;
+    width: 400px;
+    --_g: 10% /45% 45% no-repeat linear-gradient(#000 0 0);
+    --m:
+        left var(--_i, 0%) top var(--_g),
+        bottom var(--_i, 0%) left var(--_g),
+        top var(--_i, 0%) right var(--_g),
+        right var(--_i, 0%) bottom var(--_g);
+    -webkit-mask: var(--m);
+    mask: var(--m);
+    filter: grayscale(100%);
+    transform: scale(0.9);
+    transition: .3s linear;
+    cursor: pointer;
+}
+
+.aside-image:hover {
+    transform: scale(1.15);
+    --_i: 10%;
+    filter: grayscale(0);
+}
+
+/* staff image end */
+
+/* footer button start */
+
+.footer-button {
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* footer button end */
+
+/* footer content end */
+
+/* responsiveness of the project start */
+
+/* responsiveness of the project end */

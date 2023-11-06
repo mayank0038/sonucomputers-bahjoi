@@ -1,0 +1,264 @@
+/* header details start */
+
+.logo-title-button {
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    gap: 350px;
+}
+
+.logo-title-line {
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.logo {
+    height: 100px;
+    filter: drop-shadow(5px 3px 5px white);
+    border-radius: 100%;
+}
+
+.title-line {
+    color: white;
+    font-family: 'Gill Sans';
+    font-style: italic;
+    font-size: 25px;
+    text-decoration: underline;
+    animation: blink 2s linear infinite;
+}
+
+h4 {
+    font-style: italic;
+    /* color: white; */
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* sonu computers with logo end */
+
+/*button start*/
+
+.home-button {
+    /* background-color: rgba(0, 0, 255, 0.427); */
+    padding-top: 2.5%;
+    border-radius: 20px;
+    display: flex;
+}
+
+.box {
+    color: white;
+    text-decoration: underline;
+    font-style: italic;
+    width: 130px;
+    height: auto;
+    float: left;
+    transition: .5s linear;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 15px;
+    text-align: center;
+    margin: 0 5px;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.box:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(100%);
+}
+
+.box:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-top: 4px solid transparent;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(-100%);
+}
+
+.box:hover {
+    color: black;
+    background: white;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.box:hover:before {
+    border-color: red;
+    border-radius: 50px;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .3s;
+}
+
+.box:hover:after {
+    border-color: green;
+    border-radius: 50px;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .5s;
+}
+
+button {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+/*button end*/
+/* header details end */
+
+
+
+
+body {
+    background-image: url(gallery/bg-image-webp.webp);
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+.whole-content {
+    background-color: white;
+    margin: 0 10% 0 10%;
+    padding: 0 10% 0 10%;
+    border-radius: 30px;
+}
+
+/* footer content start */
+
+#footer-content {
+    background-color: rgba(0, 0, 0, 0.314);
+    border-radius: 20px;
+    display: flex;
+    margin: auto;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+/* contact us logo and TEXT start */
+
+.logo-text {
+    display: flex;
+    align-items: center;
+    padding-inline-start: 10%;
+}
+
+.logo-text:hover {
+    color: white;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+span {
+    font-size: 16px;
+    padding: 10px;
+}
+
+/* contact us logo and text end */
+
+/* contact us logo start */
+
+.logo-text .contact-us-logo {
+    height: 20px;
+    width: 20px;
+    filter: blur(0%);
+}
+
+/* contact us logo end */
+
+/* staff image start */
+
+.aside-image {
+    background-color: #000;
+    padding-top: 0px;
+    height: 250px;
+    width: 400px;
+    --_g: 10% /45% 45% no-repeat linear-gradient(#000 0 0);
+    --m:
+        left var(--_i, 0%) top var(--_g),
+        bottom var(--_i, 0%) left var(--_g),
+        top var(--_i, 0%) right var(--_g),
+        right var(--_i, 0%) bottom var(--_g);
+    -webkit-mask: var(--m);
+    mask: var(--m);
+    filter: grayscale(100%);
+    transform: scale(0.9);
+    transition: .3s linear;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.aside-image:hover {
+    transform: scale(1.15);
+    --_i: 10%;
+    filter: grayscale(0);
+}
+
+.para-hover {
+    font-size: 20px;
+    padding: 5px;
+    background-color: rgba(246, 255, 0, 0.722);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    /* text-align: center; */
+}
+
+.para-hover:hover {
+    color: #0400ff;
+    font-style: italic;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 10px;
+    padding: auto;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* staff image end */
+
+/* footer button start */
+
+.footer-button {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* footer button end */
+
+/* footer content end */
